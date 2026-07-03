@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://blee2wg610o48"]
+
+[ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
+[ext_resource type="Texture2D" uid="uid://d4nr1wbrqjxf2" path="res://bg.jpg" id="1_c2436"]
+[ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
+[ext_resource type="Texture2D" uid="uid://bjx56ecysk2xp" path="res://sprites/player.png" id="2_o1sn5"]
+[ext_resource type="Script" path="res://scences/sprite_2d.gd" id="3_3wyy0"]
+[ext_resource type="Texture2D" uid="uid://bmyrqymakcpm1" path="res://sprites/zom.png" id="3_v8q45"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3nymt"]
+radius = 11.8489
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tlmf3"]
+radius = 3.23663
+
+[node name="maincampus" type="Node2D"]
+script = ExtResource("1_8jrgy")
+
+[node name="campusmap" type="Sprite2D" parent="."]
+position = Vector2(1408, -1914)
+rotation = -2.59184
+scale = Vector2(2.08443, 2.08443)
+texture = ExtResource("1_c2436")
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(1408, -1914)
+rotation = -2.59184
+scale = Vector2(2.08443, 2.08443)
+script = ExtResource("2_mshho")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+position = Vector2(-271.439, -1233.55)
+rotation = 1.02604
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o1sn5")
+script = ExtResource("3_3wyy0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(-272.073, -1230.91)
+shape = SubResource("CircleShape2D_3nymt")
+
+[node name="zombie" type="CharacterBody2D" parent="."]
+position = Vector2(1408, -1914)
+rotation = -2.59184
+scale = Vector2(2.08443, 2.08443)
+
+[node name="Sprite2D" type="Sprite2D" parent="zombie"]
+position = Vector2(-208.045, -1167.74)
+rotation = -2.0944
+scale = Vector2(0.0579285, 0.0579285)
+texture = ExtResource("3_v8q45")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zombie"]
+position = Vector2(-209.365, -1168.06)
+rotation = -2.0944
+scale = Vector2(2.878, 2.878)
+shape = SubResource("CircleShape2D_tlmf3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(551.007, 491.007)
+rotation = -2.59184
+scale = Vector2(2.08443, 2.08443)
+zoom = Vector2(1.165, 1.165)
