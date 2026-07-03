@@ -29,6 +29,7 @@ scale = Vector2(2.08443, 2.08443)
 script = ExtResource("2_mshho")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
+z_index = 20
 position = Vector2(-271.439, -1233.55)
 rotation = 1.02604
 scale = Vector2(0.06, 0.06)
@@ -45,6 +46,7 @@ rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
 
 [node name="Sprite2D" type="Sprite2D" parent="zombie"]
+z_index = 20
 position = Vector2(-208.045, -1167.74)
 rotation = -2.0944
 scale = Vector2(0.0579285, 0.0579285)
