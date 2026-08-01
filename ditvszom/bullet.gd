@@ -1,4 +1,4 @@
-extends Area2Ds
+extends Area2D
 
 const SPEED = 600.0
 var direction = Vector2.ZERO
