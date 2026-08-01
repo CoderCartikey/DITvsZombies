@@ -1,12 +1,15 @@
 extends CharacterBody2D
 
-const SPEED = 100.0
+const SPEED = 80.0
 const DETECTION_RANGE = 500.0
 const STOP_DISTANCE = 20.0
 
 var damage_cooldown = 0.0
 
 @onready var player = get_parent().get_parent().get_node("player")
+
+func _ready():
+	add_to_group("zombies")
 
 func _physics_process(delta):
 	if player == null:
@@ -30,3 +33,6 @@ func _physics_process(delta):
 		velocity = Vector2.ZERO
 
 	move_and_slide()
+
+func die():
+	queue_free()
