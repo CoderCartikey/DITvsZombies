@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b461hvbljxub4"]
+
+[ext_resource type="Texture2D" uid="uid://ue5e08x2tq3b" path="res://46594-6-bullet-free-photo-png.png" id="1_vxclo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rw26j"]
+
+[node name="Bullet" type="Node2D"]
+
+[node name="Bullet" type="Area2D" parent="."]
+position = Vector2(1371, -1939)
+rotation = -0.953805
+
+[node name="Sprite2D" type="Sprite2D" parent="Bullet"]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_vxclo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bullet"]
+scale = Vector2(0.118326, 0.118326)
+shape = SubResource("CircleShape2D_rw26j")
