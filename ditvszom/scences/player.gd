@@ -3,6 +3,7 @@ extends CharacterBody2D
 const SPEED = 200.0
 var health = 100
 
+@export var bullet_scene : PackedScene
 @onready var health_bar = get_node("/root/maincampus/UI/HealthBar")
 
 func _physics_process(delta):
@@ -24,6 +25,19 @@ func _physics_process(delta):
 		rotation = direction.angle()
 
 	move_and_slide()
+
+func _process(delta):
+	if Input.is_action_just_pressed("ui_accept"):
+		shoot()
+
+func shoot():
+	if bullet_scene == null:
+		print("Bullet scene not assigned!")
+		return
+	var bullet = bullet_scene.instantiate()
+	bullet.direction = Vector2.RIGHT.rotated(rotation)
+	bullet.global_position = global_position
+	get_parent().add_child(bullet)
 
 func take_damage(amount):
 	health -= amount
