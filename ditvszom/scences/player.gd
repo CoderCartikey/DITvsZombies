@@ -3,6 +3,8 @@ extends CharacterBody2D
 const SPEED = 200.0
 var health = 100
 
+@onready var health_bar = get_node("/root/maincampus/UI/HealthBar")
+
 func _physics_process(delta):
 	var direction = Vector2.ZERO
 
@@ -25,7 +27,7 @@ func _physics_process(delta):
 
 func take_damage(amount):
 	health -= amount
-	print("Health: ", health)
+	health_bar.value = health
 	if health <= 0:
 		die()
 
