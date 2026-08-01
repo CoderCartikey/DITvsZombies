@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 500.0
+const SPEED = 200.0
+var health = 100
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
@@ -21,3 +22,13 @@ func _physics_process(delta):
 		rotation = direction.angle()
 
 	move_and_slide()
+
+func take_damage(amount):
+	health -= amount
+	print("Health: ", health)
+	if health <= 0:
+		die()
+
+func die():
+	print("Player Dead!")
+	get_tree().reload_current_scene()
