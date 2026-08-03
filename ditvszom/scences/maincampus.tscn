@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=10 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://dv166caxrgpml" path="res://mapdit.png" id="2_pj2n2"]
 [ext_resource type="Script" path="res://scences/sprite_2d.gd" id="3_3wyy0"]
 [ext_resource type="Texture2D" uid="uid://bmyrqymakcpm1" path="res://sprites/zom.png" id="3_v8q45"]
-[ext_resource type="PackedScene" uid="uid://b461hvbljxub4" path="res://bullet.tscn" id="4_g7pt3"]
 [ext_resource type="Script" path="res://zombie.gd" id="6_nwy3u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3nymt"]
@@ -90,7 +89,6 @@ position = Vector2(1408, -1915)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
 script = ExtResource("2_mshho")
-bullet_scene = ExtResource("4_g7pt3")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
 z_index = 20

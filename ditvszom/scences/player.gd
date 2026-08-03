@@ -3,7 +3,7 @@ extends CharacterBody2D
 const SPEED = 200.0
 var health = 100
 
-@export var bullet_scene : PackedScene
+var bullet_scene : PackedScene = preload("res://bullet.tscn")
 @onready var health_bar = get_node("/root/maincampus/CanvasLayer/HealthBar")
 
 func _physics_process(delta):
@@ -31,9 +31,6 @@ func _process(delta):
 		shoot()
 
 func shoot():
-	if bullet_scene == null:
-		print("Bullet scene not assigned!")
-		return
 	var bullet = bullet_scene.instantiate()
 	bullet.direction = Vector2.RIGHT.rotated(rotation)
 	bullet.global_position = global_position
@@ -42,6 +39,7 @@ func shoot():
 func take_damage(amount):
 	health -= amount
 	health_bar.value = health
+	print("Health: ", health)
 	if health <= 0:
 		die()
 
