@@ -4,7 +4,7 @@ const SPEED = 200.0
 var health = 100
 
 @export var bullet_scene : PackedScene
-@onready var health_bar = get_node("/root/maincampus/UI/HealthBar")
+@onready var health_bar = get_node("/root/maincampus/CanvasLayer/HealthBar")
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
