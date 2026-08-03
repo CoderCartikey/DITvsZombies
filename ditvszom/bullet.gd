@@ -16,3 +16,5 @@ func _on_body_entered(body):
 	if body.is_in_group("zombies"):
 		body.die()
 		queue_free()
+	elif body is StaticBody2D:
+		queue_free()
