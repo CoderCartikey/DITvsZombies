@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=12 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -7,12 +7,16 @@
 [ext_resource type="Script" path="res://scences/sprite_2d.gd" id="3_3wyy0"]
 [ext_resource type="Texture2D" uid="uid://bmyrqymakcpm1" path="res://sprites/zom.png" id="3_v8q45"]
 [ext_resource type="Script" path="res://zombie.gd" id="6_nwy3u"]
+[ext_resource type="Script" path="res://scences/infirmary.gd" id="8_apf64"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3nymt"]
 radius = 11.8489
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tlmf3"]
 radius = 3.23663
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8yp5y"]
+size = Vector2(158.845, 114.191)
 
 [node name="maincampus" type="Node2D"]
 script = ExtResource("1_8jrgy")
@@ -813,3 +817,13 @@ offset_left = 20.0
 offset_top = 20.0
 offset_right = 220.0
 offset_bottom = 47.0
+
+[node name="Infirmary" type="Area2D" parent="."]
+script = ExtResource("8_apf64")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Infirmary"]
+position = Vector2(534, -3987)
+rotation = 0.241272
+shape = SubResource("RectangleShape2D_8yp5y")
+
+[connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]

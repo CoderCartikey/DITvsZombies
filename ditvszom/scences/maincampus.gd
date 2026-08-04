@@ -5,3 +5,7 @@ extends Node2D
 
 func _process(delta):
 	camera.global_position = player.global_position
+
+
+func _on_infirmary_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
