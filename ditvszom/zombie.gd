@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 80.0
 const DETECTION_RANGE = 500.0
-const STOP_DISTANCE = 20.0
+const STOP_DISTANCE = 30.0
 
 var damage_cooldown = 0.0
 
@@ -13,6 +13,7 @@ func _ready():
 
 func _physics_process(delta):
 	if player == null:
+		print("Player not found!")
 		return
 
 	var distance = global_position.distance_to(player.global_position)
@@ -27,6 +28,7 @@ func _physics_process(delta):
 			velocity = Vector2.ZERO
 			damage_cooldown -= delta
 			if damage_cooldown <= 0:
+				print("Zombie attacking!")
 				player.take_damage(10)
 				damage_cooldown = 1.0
 	else:
