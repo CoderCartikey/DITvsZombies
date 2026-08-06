@@ -3,13 +3,13 @@ extends CharacterBody2D
 const SPEED = 200.0
 var health = 100
 var health_bar = null
-
-var bullet_scene : PackedScene = preload("res://scenes/bullet.tscn")
+var bullet_scene = null
 
 func _ready():
+	bullet_scene = load("res://bullet.tscn")
 	health_bar = get_node_or_null("/root/maincampus/CanvasLayer/HealthBar")
 	if health_bar == null:
-		print("WARNING: HealthBar node not found!")
+		print("WARNING: HealthBar not found!")
 	else:
 		health_bar.value = 100
 		print("HealthBar found!")
@@ -35,6 +35,9 @@ func _process(delta):
 		shoot()
 
 func shoot():
+	if bullet_scene == null:
+		print("Bullet scene null!")
+		return
 	var bullet = bullet_scene.instantiate()
 	bullet.direction = Vector2.RIGHT.rotated(rotation)
 	bullet.global_position = global_position
@@ -42,7 +45,7 @@ func shoot():
 
 func take_damage(amount):
 	health -= amount
-	print("Health: ", health)
+	print("DAMAGE! Health:", health)
 	if health_bar != null:
 		health_bar.value = health
 	if health <= 0:
