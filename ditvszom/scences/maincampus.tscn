@@ -28,6 +28,7 @@ scale = Vector2(0.876, 0.749)
 texture = ExtResource("2_pj2n2")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="campusmap"]
+collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="campusmap/StaticBody2D"]
 polygon = PackedVector2Array(-205.487, -1883.84, -222.61, -1919.89, -256.857, -1961.28, -278.546, -1954.6, -293.386, -1941.25, -291.103, -1922.56, -268.272, -1897.19, -252.29, -1865.15, -232.884, -1857.14, -211.194, -1869.16)
@@ -92,6 +93,7 @@ polygon = PackedVector2Array(666.658, -2343.13, 648.393, -2351.14, 663.232, -257
 position = Vector2(1408, -1915)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 2
 script = ExtResource("2_mshho")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
@@ -117,6 +119,7 @@ zoom = Vector2(1.165, 1.165)
 position = Vector2(1174, -2279)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie"]
