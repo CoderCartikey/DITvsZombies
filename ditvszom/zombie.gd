@@ -13,10 +13,11 @@ func _ready():
 
 func _physics_process(delta):
 	if player == null:
-		print("Player not found!")
+		print("Player null!")
 		return
 
 	var distance = global_position.distance_to(player.global_position)
+	print("Distance: ", distance)
 
 	if distance < DETECTION_RANGE:
 		var direction = (player.global_position - global_position).normalized()
