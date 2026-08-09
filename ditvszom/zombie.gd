@@ -5,19 +5,17 @@ const DETECTION_RANGE = 500.0
 const STOP_DISTANCE = 30.0
 
 var damage_cooldown = 0.0
-
-@onready var player = get_parent().get_parent().get_node("player")
+var player = null
 
 func _ready():
 	add_to_group("zombies")
+	player = get_parent().get_parent().get_node("player")
 
 func _physics_process(delta):
 	if player == null:
-		print("Player null!")
 		return
 
 	var distance = global_position.distance_to(player.global_position)
-	print("Distance: ", distance)
 
 	if distance < DETECTION_RANGE:
 		var direction = (player.global_position - global_position).normalized()
@@ -29,7 +27,6 @@ func _physics_process(delta):
 			velocity = Vector2.ZERO
 			damage_cooldown -= delta
 			if damage_cooldown <= 0:
-				print("Zombie attacking!")
 				player.take_damage(10)
 				damage_cooldown = 1.0
 	else:
