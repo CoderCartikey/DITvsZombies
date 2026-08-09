@@ -828,11 +828,19 @@ shape = SubResource("RectangleShape2D_8yp5y")
 [node name="alllables" type="Node" parent="."]
 
 [node name="Label" type="Label" parent="alllables"]
-offset_left = 1419.11
-offset_top = -3119.36
-offset_right = 1512.11
-offset_bottom = -3096.36
+offset_left = 1394.0
+offset_top = -3141.0
+offset_right = 1487.0
+offset_bottom = -3118.0
 scale = Vector2(3.08, 3.08)
 text = "Girl's Hostel"
+
+[node name="Label2" type="Label" parent="alllables"]
+offset_left = 1398.0
+offset_top = -3086.0
+offset_right = 1619.0
+offset_bottom = -3063.0
+scale = Vector2(1.28898, 1.28898)
+text = "(devloper ain't allowed here)"
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
