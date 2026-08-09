@@ -820,6 +820,7 @@ value = 100.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Infirmary" type="Area2D" parent="."]
+collision_layer = 3
 script = ExtResource("8_apf64")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Infirmary"]
