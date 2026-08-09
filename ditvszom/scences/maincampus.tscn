@@ -832,15 +832,61 @@ offset_left = 1394.0
 offset_top = -3141.0
 offset_right = 1487.0
 offset_bottom = -3118.0
+rotation = -0.0303624
 scale = Vector2(3.08, 3.08)
 text = "Girl's Hostel"
 
-[node name="Label2" type="Label" parent="alllables"]
-offset_left = 1398.0
-offset_top = -3086.0
-offset_right = 1619.0
-offset_bottom = -3063.0
-scale = Vector2(1.28898, 1.28898)
+[node name="Label2" type="Label" parent="alllables/Label"]
+offset_left = 1.29865
+offset_top = 17.8571
+offset_right = 222.299
+offset_bottom = 40.8571
+scale = Vector2(0.410462, 0.410462)
 text = "(devloper ain't allowed here)"
+
+[node name="Label3" type="Label" parent="alllables"]
+offset_left = 872.0
+offset_top = -3792.0
+offset_right = 1093.0
+offset_bottom = -3769.0
+rotation = 0.17998
+scale = Vector2(2.79854, 2.79854)
+text = "VEDANTA"
+
+[node name="Label4" type="Label" parent="alllables"]
+offset_left = 1039.0
+offset_top = -4180.0
+offset_right = 1260.0
+offset_bottom = -4157.0
+rotation = 0.17998
+scale = Vector2(3.15199, 3.15199)
+text = "VASTU"
+
+[node name="Label6" type="Label" parent="alllables"]
+offset_left = 708.0
+offset_top = -4607.0
+offset_right = 929.0
+offset_bottom = -4584.0
+rotation = 0.17998
+scale = Vector2(2.1199, 2.1199)
+text = "PARKING"
+
+[node name="Label7" type="Label" parent="alllables"]
+offset_left = 905.0
+offset_top = -5113.0
+offset_right = 1126.0
+offset_bottom = -5090.0
+rotation = -0.0726309
+scale = Vector2(3.34943, 3.34943)
+text = "CHANAKYA"
+
+[node name="Label5" type="Label" parent="alllables"]
+offset_left = 863.0
+offset_top = -3965.0
+offset_right = 1084.0
+offset_bottom = -3942.0
+rotation = 0.200238
+scale = Vector2(1.52045, 1.52045)
+text = "<<<<Way to Infirmary "
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
