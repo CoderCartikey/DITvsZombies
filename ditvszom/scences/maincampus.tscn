@@ -909,4 +909,22 @@ rotation = 1.01229
 scale = Vector2(2.87975, 2.87975)
 text = "VIVEKANANDA"
 
+[node name="Label10" type="Label" parent="alllables"]
+offset_left = 1759.0
+offset_top = -5468.0
+offset_right = 1980.0
+offset_bottom = -5445.0
+rotation = -0.46426
+scale = Vector2(1.8338, 1.8338)
+text = "Frisco"
+
+[node name="Label11" type="Label" parent="alllables"]
+offset_left = 1848.0
+offset_top = -4998.0
+offset_right = 2069.0
+offset_bottom = -4975.0
+rotation = 0.191783
+scale = Vector2(2.054, 2.054)
+text = "VISHVASARAY"
+
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
