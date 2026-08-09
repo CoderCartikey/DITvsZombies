@@ -864,6 +864,15 @@ rotation = -1.28402
 scale = Vector2(3.15199, 3.15199)
 text = "VASTU"
 
+[node name="Label5" type="Label" parent="alllables"]
+offset_left = 863.0
+offset_top = -3965.0
+offset_right = 1084.0
+offset_bottom = -3942.0
+rotation = 0.200238
+scale = Vector2(1.52045, 1.52045)
+text = "<<<<Way to Infirmary "
+
 [node name="Label6" type="Label" parent="alllables"]
 offset_left = 708.0
 offset_top = -4607.0
@@ -891,13 +900,13 @@ rotation = -0.437355
 scale = Vector2(3.34943, 3.34943)
 text = "VISHVKARMA"
 
-[node name="Label5" type="Label" parent="alllables"]
-offset_left = 863.0
-offset_top = -3965.0
-offset_right = 1084.0
-offset_bottom = -3942.0
-rotation = 0.200238
-scale = Vector2(1.52045, 1.52045)
-text = "<<<<Way to Infirmary "
+[node name="Label9" type="Label" parent="alllables"]
+offset_left = 596.0
+offset_top = -5716.0
+offset_right = 817.0
+offset_bottom = -5693.0
+rotation = 1.01229
+scale = Vector2(2.87975, 2.87975)
+text = "VIVEKANANDA"
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
