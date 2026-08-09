@@ -825,4 +825,14 @@ position = Vector2(534, -3987)
 rotation = 0.241272
 shape = SubResource("RectangleShape2D_8yp5y")
 
+[node name="alllables" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="alllables"]
+offset_left = 1419.11
+offset_top = -3119.36
+offset_right = 1512.11
+offset_bottom = -3096.36
+scale = Vector2(3.08, 3.08)
+text = "Girl's Hostel"
+
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
