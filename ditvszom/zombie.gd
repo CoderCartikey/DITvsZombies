@@ -2,14 +2,17 @@ extends CharacterBody2D
 
 const SPEED = 80.0
 const DETECTION_RANGE = 500.0
-const STOP_DISTANCE = 30.0
+const STOP_DISTANCE = 35.0
 
 var damage_cooldown = 0.0
 var player = null
 
 func _ready():
 	add_to_group("zombies")
+	# Player dhundho
 	player = get_parent().get_parent().get_node("player")
+	if player == null:
+		print("Player not found from zombie: ", name)
 
 func _physics_process(delta):
 	if player == null:
