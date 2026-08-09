@@ -8,7 +8,7 @@ var is_dead = false
 
 func _ready():
 	bullet_scene = load("res://bullet.tscn")
-	health_bar = get_node_or_null("/root/maincampus/CanvasLayer/HealthBar")
+	health_bar = get_node_or_null("/root/maincampus/CanvasLayer/Control/HealthBar")
 	if health_bar:
 		health_bar.value = 100
 
