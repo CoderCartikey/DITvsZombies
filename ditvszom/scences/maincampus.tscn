@@ -929,3 +929,4 @@ scale = Vector2(2.054, 2.054)
 text = "VISHVASARAY"
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
+[connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
