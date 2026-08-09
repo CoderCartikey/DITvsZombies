@@ -815,7 +815,9 @@ offset_left = 20.0
 offset_top = 20.0
 offset_right = 220.0
 offset_bottom = 47.0
+scale = Vector2(1.67667, 1.67667)
 value = 100.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Infirmary" type="Area2D" parent="."]
 script = ExtResource("8_apf64")
@@ -845,20 +847,20 @@ scale = Vector2(0.410462, 0.410462)
 text = "(devloper ain't allowed here)"
 
 [node name="Label3" type="Label" parent="alllables"]
-offset_left = 872.0
-offset_top = -3792.0
-offset_right = 1093.0
-offset_bottom = -3769.0
-rotation = 0.17998
+offset_left = 965.0
+offset_top = -3663.0
+offset_right = 1186.0
+offset_bottom = -3640.0
+rotation = -1.25486
 scale = Vector2(2.79854, 2.79854)
 text = "VEDANTA"
 
 [node name="Label4" type="Label" parent="alllables"]
-offset_left = 1039.0
-offset_top = -4180.0
-offset_right = 1260.0
-offset_bottom = -4157.0
-rotation = 0.17998
+offset_left = 1085.0
+offset_top = -4051.0
+offset_right = 1306.0
+offset_bottom = -4028.0
+rotation = -1.28402
 scale = Vector2(3.15199, 3.15199)
 text = "VASTU"
 
@@ -879,6 +881,15 @@ offset_bottom = -5090.0
 rotation = -0.0726309
 scale = Vector2(3.34943, 3.34943)
 text = "CHANAKYA"
+
+[node name="Label8" type="Label" parent="alllables"]
+offset_left = 1384.0
+offset_top = -5050.0
+offset_right = 1605.0
+offset_bottom = -5027.0
+rotation = -0.437355
+scale = Vector2(3.34943, 3.34943)
+text = "VISHVKARMA"
 
 [node name="Label5" type="Label" parent="alllables"]
 offset_left = 863.0
