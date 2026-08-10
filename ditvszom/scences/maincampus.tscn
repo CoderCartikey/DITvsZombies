@@ -840,6 +840,7 @@ scale = Vector2(3.08, 3.08)
 text = "Girl's Hostel"
 
 [node name="Label2" type="Label" parent="alllables/Label"]
+layout_mode = 0
 offset_left = 1.29865
 offset_top = 17.8571
 offset_right = 222.299
