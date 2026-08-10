@@ -126,6 +126,7 @@ script = ExtResource("6_hu1ns")
 position = Vector2(1195, -2355)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie2"]
@@ -143,6 +144,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1109, -2367)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie3"]
@@ -160,6 +162,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1117, -2870)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie4"]
@@ -177,6 +180,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1079, -2858)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie5"]
@@ -194,6 +198,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(837, -2970)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie6"]
@@ -211,6 +216,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(800, -2962)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie7"]
@@ -228,6 +234,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(889, -2952)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie8"]
@@ -245,6 +252,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1019, -3920)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie9"]
@@ -262,6 +270,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(743, -3971)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie10"]
@@ -279,6 +288,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1186, -3501)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie11"]
@@ -296,6 +306,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1256, -4097)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie12"]
@@ -313,6 +324,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1408, -4165)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie13"]
@@ -330,6 +342,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(852, -4467)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie14"]
@@ -347,6 +360,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(696, -4487)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie15"]
@@ -364,6 +378,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(468, -4672)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie16"]
@@ -381,6 +396,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(584, -4700)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie17"]
@@ -398,6 +414,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(575, -4518)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie18"]
@@ -415,6 +432,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(731, -4654)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie19"]
@@ -432,6 +450,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(796, -4731)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie20"]
@@ -449,6 +468,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(862, -4687)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie21"]
@@ -466,6 +486,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(799, -4560)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie22"]
@@ -483,6 +504,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(942, -4492)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie23"]
@@ -500,6 +522,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1052, -4606)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie24"]
@@ -517,6 +540,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(820, -5102)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie25"]
@@ -534,6 +558,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(643, -5457)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie26"]
@@ -551,6 +576,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(535, -5655)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie27"]
@@ -568,6 +594,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(390, -5495)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie28"]
@@ -585,6 +612,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(752, -5753)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie29"]
@@ -602,6 +630,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1025, -5790)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie30"]
@@ -619,6 +648,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1194, -5692)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie31"]
@@ -636,6 +666,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1535, -5759)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie32"]
@@ -653,6 +684,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1776, -5759)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie33"]
@@ -670,6 +702,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1996, -5367)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie34"]
@@ -687,6 +720,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1980, -5319)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie35"]
@@ -704,6 +738,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1942, -5342)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie36"]
@@ -721,6 +756,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1932, -5096)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie37"]
@@ -738,6 +774,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1885, -5041)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie38"]
@@ -755,6 +792,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1898, -5128)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie39"]
@@ -772,6 +810,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1712, -4683)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie40"]
@@ -789,6 +828,7 @@ shape = SubResource("CircleShape2D_tlmf3")
 position = Vector2(1651, -4663)
 rotation = -2.59184
 scale = Vector2(2.08443, 2.08443)
+collision_layer = 4
 script = ExtResource("6_nwy3u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ZOM/zombie41"]
