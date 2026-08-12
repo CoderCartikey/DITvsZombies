@@ -916,25 +916,20 @@ offset_top = -3141.0
 offset_right = 1487.0
 offset_bottom = -3118.0
 rotation = -0.0303624
-scale = Vector2(3.08, 3.08)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 41
 text = "Girl's Hostel"
 
 [node name="Label2" type="Label" parent="alllables/Label"]
-offset_left = 1.29865
-offset_top = 17.8571
-offset_right = 222.299
-offset_bottom = 40.8571
-scale = Vector2(0.410462, 0.410462)
+offset_left = 1.45031
+offset_top = 51.0677
+offset_right = 238.45
+offset_bottom = 74.0677
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 17
 text = "(devloper ain't allowed here)"
-
-[node name="Label3" type="Label" parent="alllables"]
-offset_left = 965.0
-offset_top = -3663.0
-offset_right = 1186.0
-offset_bottom = -3640.0
-rotation = -1.25486
-scale = Vector2(2.79854, 2.79854)
-text = "VEDANTA"
 
 [node name="Label12" type="Label" parent="alllables"]
 offset_left = 941.0
@@ -942,7 +937,9 @@ offset_top = -1819.0
 offset_right = 1162.0
 offset_bottom = -1770.0
 rotation = -0.214051
-scale = Vector2(1.87217, 1.81484)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 33
 text = "PARKING
 GROUND"
 
@@ -952,17 +949,31 @@ offset_top = -4051.0
 offset_right = 1306.0
 offset_bottom = -4028.0
 rotation = -1.28402
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 56
 text = "VASTU"
 
+[node name="Label16" type="Label" parent="alllables"]
+offset_left = 891.0
+offset_top = -3536.0
+offset_right = 1191.0
+offset_bottom = -3467.0
+rotation = -1.17543
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 56
+text = "VEDANTA"
+
 [node name="Label5" type="Label" parent="alllables"]
-offset_left = 863.0
-offset_top = -3965.0
-offset_right = 1084.0
-offset_bottom = -3942.0
+offset_left = 857.0
+offset_top = -3958.0
+offset_right = 1144.0
+offset_bottom = -3929.0
 rotation = 0.200238
-scale = Vector2(1.52045, 1.52045)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_3px18")
+theme_override_font_sizes/font_size = 23
 text = "<<<<Way to Infirmary "
 
 [node name="Label6" type="Label" parent="alllables"]
@@ -971,6 +982,7 @@ offset_top = -4607.0
 offset_right = 929.0
 offset_bottom = -4584.0
 rotation = 0.223597
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 49
 text = "PARKING"
@@ -981,6 +993,7 @@ offset_top = -5090.0
 offset_right = 1237.0
 offset_bottom = -5016.0
 rotation = -0.0726309
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 56
 text = "CHANAKYA"
@@ -991,6 +1004,7 @@ offset_top = -5944.0
 offset_right = 1446.0
 offset_bottom = -5867.0
 rotation = 0.00563017
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("13_ysssi")
 theme_override_font_sizes/font_size = 76
 text = "Boys hostel soooon...."
@@ -1001,6 +1015,7 @@ offset_top = -5039.0
 offset_right = 1702.0
 offset_bottom = -4987.0
 rotation = -0.437355
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 42
 text = "VISHVKARMA"
@@ -1011,6 +1026,7 @@ offset_top = -5697.0
 offset_right = 910.0
 offset_bottom = -5653.0
 rotation = 1.01229
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 36
 text = "VIVEKANANDA"
@@ -1022,6 +1038,7 @@ offset_right = 1980.0
 offset_bottom = -5445.0
 rotation = -0.46426
 scale = Vector2(1.8338, 1.8338)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 text = "Frisco"
 
 [node name="Label14" type="Label" parent="alllables"]
@@ -1029,6 +1046,7 @@ offset_left = 1112.0
 offset_top = -5848.0
 offset_right = 1333.0
 offset_bottom = -5822.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("13_3px18")
 theme_override_font_sizes/font_size = 21
 text = "Hostel Gate - 1"
@@ -1038,6 +1056,7 @@ offset_left = 194.0
 offset_top = -5854.0
 offset_right = 415.0
 offset_bottom = -5828.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("13_3px18")
 theme_override_font_sizes/font_size = 21
 text = "Hostel Gate - 2"
@@ -1048,6 +1067,7 @@ offset_top = -4998.0
 offset_right = 2069.0
 offset_bottom = -4975.0
 rotation = 0.191783
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 26
 text = "VISHVASARAY"
