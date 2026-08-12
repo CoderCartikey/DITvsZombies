@@ -999,3 +999,4 @@ shape = SubResource("RectangleShape2D_yly64")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
+[connection signal="body_entered" from="ZoomArea" to="." method="_on_zoom_area_body_entered"]
