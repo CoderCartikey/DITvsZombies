@@ -943,6 +943,16 @@ theme_override_font_sizes/font_size = 33
 text = "PARKING
 GROUND"
 
+[node name="Label17" type="Label" parent="alllables"]
+offset_left = 617.0
+offset_top = -1301.0
+offset_right = 1654.0
+offset_bottom = -1212.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_ysssi")
+theme_override_font_sizes/font_size = 88
+text = "DIT vs ZOMBIES"
+
 [node name="Label4" type="Label" parent="alllables"]
 offset_left = 1085.0
 offset_top = -4051.0
