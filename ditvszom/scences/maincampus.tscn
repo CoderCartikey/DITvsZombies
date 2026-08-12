@@ -127,7 +127,7 @@ polygon = PackedVector2Array(666.658, -2343.13, 648.393, -2351.14, 663.232, -257
 
 [node name="player" type="CharacterBody2D" parent="."]
 z_index = 665
-position = Vector2(1408, -1915)
+position = Vector2(1030, -1454)
 rotation = -2.2904
 scale = Vector2(1.58365, 1.58365)
 collision_layer = 3
