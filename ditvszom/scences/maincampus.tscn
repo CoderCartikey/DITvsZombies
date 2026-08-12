@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=23 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -15,6 +15,8 @@
 [ext_resource type="FontFile" uid="uid://ga7hdml252in" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf" id="13_3px18"]
 [ext_resource type="FontFile" uid="uid://bvv2q05c3enjq" path="res://kirifont/KiriFont.ttf" id="13_ysssi"]
 [ext_resource type="FontFile" uid="uid://cvfd47ndpbo2p" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf" id="15_g16br"]
+[ext_resource type="Texture2D" uid="uid://cggbycgurufte" path="res://sprites/SIDEplayer.png" id="16_7tx1y"]
+[ext_resource type="Texture2D" uid="uid://dsdbgofnvxrx4" path="res://sprites/SIDEzom.png" id="17_3fq2y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mr6ob"]
 size = Vector2(56.9812, 3.93775)
@@ -1104,6 +1106,52 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 26
 text = "VISHVASARAY"
+
+[node name="SidEplayer" type="Sprite2D" parent="."]
+z_index = 15
+position = Vector2(665, -1273)
+scale = Vector2(0.331055, 0.331055)
+texture = ExtResource("16_7tx1y")
+flip_h = true
+
+[node name="SidEzom" type="Sprite2D" parent="."]
+position = Vector2(1267, -1284)
+scale = Vector2(0.276454, 0.276454)
+texture = ExtResource("17_3fq2y")
+flip_h = true
+
+[node name="SidEzom3" type="Sprite2D" parent="."]
+position = Vector2(1424, -1268)
+scale = Vector2(0.276454, 0.276454)
+texture = ExtResource("17_3fq2y")
+flip_h = true
+
+[node name="SidEzom2" type="Sprite2D" parent="."]
+position = Vector2(1343, -1235)
+scale = Vector2(0.276454, 0.276454)
+texture = ExtResource("17_3fq2y")
+flip_h = true
+
+[node name="SidEzom4" type="Sprite2D" parent="."]
+z_index = 25
+position = Vector2(1533, -1259)
+scale = Vector2(0.276454, 0.276454)
+texture = ExtResource("17_3fq2y")
+flip_h = true
+
+[node name="SidEzom5" type="Sprite2D" parent="."]
+z_index = 25
+position = Vector2(1384, -1089)
+scale = Vector2(0.276454, 0.276454)
+texture = ExtResource("17_3fq2y")
+flip_h = true
+
+[node name="SidEzom6" type="Sprite2D" parent="."]
+z_index = 25
+position = Vector2(1508, -1052)
+scale = Vector2(0.276454, 0.276454)
+texture = ExtResource("17_3fq2y")
+flip_h = true
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
