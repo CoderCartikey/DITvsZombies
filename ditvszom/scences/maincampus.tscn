@@ -979,6 +979,8 @@ position = Vector2(1432, -1897)
 rotation = -2.59184
 scale = Vector2(1, 1)
 zoom = Vector2(1.165, 1.165)
+limit_top = 4459
+limit_bottom = 5533
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
