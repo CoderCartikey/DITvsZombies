@@ -18,3 +18,9 @@ func _ready():
 		zombie.set_collision_layer_value(3, true)
 		zombie.set_collision_mask_value(1, true)
 		zombie.set_collision_mask_value(2, true)
+
+
+func _on_zoom_area_body_entered(body: Node2D) -> void:
+	if body.name == "player":
+		print("ZOOM TRIGGERED")
+		camera.zoom = Vector2(2, 2)
