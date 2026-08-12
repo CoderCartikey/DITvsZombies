@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=15 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://8dfube05wnca" path="res://zombie.tscn" id="7_ssrky"]
 [ext_resource type="Script" path="res://scences/infirmary.gd" id="8_apf64"]
 [ext_resource type="Texture2D" uid="uid://csg4c1gxuahl3" path="res://scences/CS.jpg" id="11_eoqjm"]
-[ext_resource type="Script" path="res://scences/zoom_area.gd" id="11_x3d3q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3nymt"]
 radius = 12.0613
@@ -21,9 +20,6 @@ radius = 3.23663
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8yp5y"]
 size = Vector2(158.845, 114.191)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yly64"]
-size = Vector2(1713.35, 4277.65)
 
 [node name="maincampus" type="Node2D"]
 position = Vector2(-7, 3)
@@ -993,16 +989,5 @@ rotation = 0.191783
 scale = Vector2(2.054, 2.054)
 text = "VISHVASARAY"
 
-[node name="ZoomArea" type="Area2D" parent="."]
-collision_mask = 2
-script = ExtResource("11_x3d3q")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea"]
-position = Vector2(832.78, -4585.04)
-rotation = -3.14159
-scale = Vector2(0.537218, -0.148661)
-shape = SubResource("RectangleShape2D_yly64")
-
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
-[connection signal="body_entered" from="ZoomArea" to="." method="_on_zoom_area_body_entered"]
