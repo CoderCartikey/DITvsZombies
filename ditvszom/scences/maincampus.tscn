@@ -106,16 +106,16 @@ scale = Vector2(0.095, 0.095)
 texture = ExtResource("2_o1sn5")
 script = ExtResource("3_3wyy0")
 
+[node name="Camera2D" type="Camera2D" parent="player/Sprite2D"]
+position = Vector2(-195.12, 41.1152)
+rotation = -0.30144
+scale = Vector2(6.64687, 6.64687)
+zoom = Vector2(1.165, 1.165)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2(2.48043, 1.29331)
 scale = Vector2(-1.4277, 0.864843)
 shape = SubResource("CircleShape2D_3nymt")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(551.007, 491.007)
-rotation = -2.59184
-scale = Vector2(15.1219, -0.543921)
-zoom = Vector2(1.165, 1.165)
 
 [node name="ZOM" type="Node2D" parent="."]
 script = ExtResource("6_hu1ns")
@@ -897,6 +897,16 @@ offset_bottom = -3640.0
 rotation = -1.25486
 scale = Vector2(2.79854, 2.79854)
 text = "VEDANTA"
+
+[node name="Label12" type="Label" parent="alllables"]
+offset_left = 941.0
+offset_top = -1819.0
+offset_right = 1162.0
+offset_bottom = -1770.0
+rotation = -0.214051
+scale = Vector2(1.87217, 1.81484)
+text = "PARKING
+GROUND"
 
 [node name="Label4" type="Label" parent="alllables"]
 offset_left = 1085.0
