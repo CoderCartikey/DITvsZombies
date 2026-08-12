@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=25 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -17,6 +17,7 @@
 [ext_resource type="FontFile" uid="uid://cvfd47ndpbo2p" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf" id="15_g16br"]
 [ext_resource type="Texture2D" uid="uid://cggbycgurufte" path="res://sprites/SIDEplayer.png" id="16_7tx1y"]
 [ext_resource type="Texture2D" uid="uid://dsdbgofnvxrx4" path="res://sprites/SIDEzom.png" id="17_3fq2y"]
+[ext_resource type="Texture2D" uid="uid://dlcgf6urjpj3v" path="res://sprites/car.png" id="18_kq56s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mr6ob"]
 size = Vector2(56.9812, 3.93775)
@@ -33,11 +34,15 @@ size = Vector2(158.845, 114.191)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yly64"]
 size = Vector2(1988.84, 4116.21)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hr1rr"]
+size = Vector2(110.446, 50.2876)
+
 [node name="maincampus" type="Node2D"]
 position = Vector2(-7, 3)
 script = ExtResource("1_8jrgy")
 
 [node name="Cs" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(1066.5, -3530.5)
 scale = Vector2(1.48073, 4.85093)
 texture = ExtResource("11_eoqjm")
@@ -53,6 +58,7 @@ scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_mr6ob")
 
 [node name="campusmap" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(960, -3585)
 rotation = -3.14159
 scale = Vector2(0.876, 0.749)
@@ -1155,6 +1161,20 @@ position = Vector2(1508, -1052)
 scale = Vector2(0.276454, 0.276454)
 texture = ExtResource("17_3fq2y")
 flip_h = true
+
+[node name="Car" type="Sprite2D" parent="."]
+position = Vector2(1902, -5526)
+rotation = -0.505281
+scale = Vector2(0.118208, 0.138739)
+texture = ExtResource("18_kq56s")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Car"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Car/StaticBody2D"]
+z_index = 20
+position = Vector2(4.49219, -1.07031)
+scale = Vector2(4.83, 4.83)
+shape = SubResource("RectangleShape2D_hr1rr")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
