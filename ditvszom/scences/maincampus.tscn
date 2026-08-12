@@ -58,7 +58,6 @@ scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_mr6ob")
 
 [node name="campusmap" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(960, -3585)
 rotation = -3.14159
 scale = Vector2(0.876, 0.749)
