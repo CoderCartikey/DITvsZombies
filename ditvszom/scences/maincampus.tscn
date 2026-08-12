@@ -31,7 +31,7 @@ radius = 3.23663
 size = Vector2(158.845, 114.191)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yly64"]
-size = Vector2(1713.35, 4277.65)
+size = Vector2(1988.84, 4116.21)
 
 [node name="maincampus" type="Node2D"]
 position = Vector2(-7, 3)
@@ -905,7 +905,7 @@ collision_mask = 2
 script = ExtResource("11_x3d3q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea"]
-position = Vector2(832.78, -4585.04)
+position = Vector2(906.78, -4573.04)
 rotation = -3.14159
 scale = Vector2(0.537218, -0.148661)
 shape = SubResource("RectangleShape2D_yly64")
