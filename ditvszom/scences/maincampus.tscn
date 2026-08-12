@@ -909,9 +909,20 @@ collision_mask = 2
 script = ExtResource("11_x3d3q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea"]
-visible = false
 position = Vector2(906.78, -4573.04)
 rotation = -3.14159
+scale = Vector2(0.537218, -0.148661)
+shape = SubResource("RectangleShape2D_yly64")
+
+[node name="ZoomArea2" type="Area2D" parent="."]
+position = Vector2(1124, -924)
+rotation = -0.00767307
+collision_mask = 2
+script = ExtResource("11_x3d3q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea2"]
+position = Vector2(693.552, -4630.81)
+rotation = -2.17224
 scale = Vector2(0.537218, -0.148661)
 shape = SubResource("RectangleShape2D_yly64")
 
@@ -1178,3 +1189,5 @@ shape = SubResource("RectangleShape2D_hr1rr")
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
 [connection signal="body_entered" from="ZoomArea" to="." method="_on_zoom_area_body_entered"]
 [connection signal="body_exited" from="ZoomArea" to="." method="_on_zoom_area_body_exited"]
+[connection signal="body_entered" from="ZoomArea2" to="." method="_on_zoom_area_body_entered"]
+[connection signal="body_exited" from="ZoomArea2" to="." method="_on_zoom_area_body_exited"]
