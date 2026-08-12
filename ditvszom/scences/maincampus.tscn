@@ -60,7 +60,6 @@ scale = Vector2(0.876, 0.749)
 texture = ExtResource("2_pj2n2")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="campusmap"]
-visible = false
 collision_layer = 15
 collision_mask = 15
 
