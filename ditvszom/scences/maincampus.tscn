@@ -21,6 +21,7 @@ radius = 3.23663
 size = Vector2(158.845, 114.191)
 
 [node name="maincampus" type="Node2D"]
+position = Vector2(909, 5817)
 script = ExtResource("1_8jrgy")
 
 [node name="campusmap" type="Sprite2D" parent="."]
@@ -118,9 +119,9 @@ texture = ExtResource("2_o1sn5")
 script = ExtResource("3_3wyy0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2(1.54212, 3.03074)
+position = Vector2(2.48041, 1.29346)
 rotation = 3.14159
-scale = Vector2(1.4277, -1.14509)
+scale = Vector2(1.4277, -0.864843)
 shape = SubResource("CircleShape2D_3nymt")
 
 [node name="ZOM" type="Node2D" parent="."]
