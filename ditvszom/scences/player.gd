@@ -15,7 +15,6 @@ func _ready():
 func _physics_process(delta):
 	if is_dead:
 		return
-
 	var direction = Vector2.ZERO
 	if Input.is_key_pressed(KEY_D):
 		direction.x += 1
@@ -29,8 +28,10 @@ func _physics_process(delta):
 	direction = direction.normalized()
 	velocity = direction * SPEED
 
+	# Smooth rotation
 	if direction != Vector2.ZERO:
-		rotation = direction.angle()
+		var target_angle = direction.angle()
+		rotation = lerp_angle(rotation, target_angle, 0.1)
 
 	move_and_slide()
 
