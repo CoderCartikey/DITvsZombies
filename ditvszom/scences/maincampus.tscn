@@ -1107,46 +1107,48 @@ theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 26
 text = "VISHVASARAY"
 
-[node name="SidEplayer" type="Sprite2D" parent="."]
+[node name="BANNER" type="Node2D" parent="."]
+
+[node name="SidEplayer" type="Sprite2D" parent="BANNER"]
 z_index = 15
 position = Vector2(665, -1273)
 scale = Vector2(0.331055, 0.331055)
 texture = ExtResource("16_7tx1y")
 flip_h = true
 
-[node name="SidEzom" type="Sprite2D" parent="."]
+[node name="SidEzom" type="Sprite2D" parent="BANNER"]
 position = Vector2(1267, -1284)
 scale = Vector2(0.276454, 0.276454)
 texture = ExtResource("17_3fq2y")
 flip_h = true
 
-[node name="SidEzom3" type="Sprite2D" parent="."]
+[node name="SidEzom3" type="Sprite2D" parent="BANNER"]
 position = Vector2(1424, -1268)
 scale = Vector2(0.276454, 0.276454)
 texture = ExtResource("17_3fq2y")
 flip_h = true
 
-[node name="SidEzom2" type="Sprite2D" parent="."]
+[node name="SidEzom2" type="Sprite2D" parent="BANNER"]
 position = Vector2(1343, -1235)
 scale = Vector2(0.276454, 0.276454)
 texture = ExtResource("17_3fq2y")
 flip_h = true
 
-[node name="SidEzom4" type="Sprite2D" parent="."]
+[node name="SidEzom4" type="Sprite2D" parent="BANNER"]
 z_index = 25
 position = Vector2(1533, -1259)
 scale = Vector2(0.276454, 0.276454)
 texture = ExtResource("17_3fq2y")
 flip_h = true
 
-[node name="SidEzom5" type="Sprite2D" parent="."]
+[node name="SidEzom5" type="Sprite2D" parent="BANNER"]
 z_index = 25
 position = Vector2(1384, -1089)
 scale = Vector2(0.276454, 0.276454)
 texture = ExtResource("17_3fq2y")
 flip_h = true
 
-[node name="SidEzom6" type="Sprite2D" parent="."]
+[node name="SidEzom6" type="Sprite2D" parent="BANNER"]
 z_index = 25
 position = Vector2(1508, -1052)
 scale = Vector2(0.276454, 0.276454)
