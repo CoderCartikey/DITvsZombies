@@ -43,6 +43,7 @@ scale = Vector2(1.48073, 4.85093)
 texture = ExtResource("11_eoqjm")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Cs"]
+visible = false
 scale = Vector2(23.87, 23.87)
 collision_layer = 15
 collision_mask = 15
@@ -59,6 +60,7 @@ scale = Vector2(0.876, 0.749)
 texture = ExtResource("2_pj2n2")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="campusmap"]
+visible = false
 collision_layer = 15
 collision_mask = 15
 
@@ -905,6 +907,7 @@ collision_mask = 2
 script = ExtResource("11_x3d3q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea"]
+visible = false
 position = Vector2(906.78, -4573.04)
 rotation = -3.14159
 scale = Vector2(0.537218, -0.148661)
