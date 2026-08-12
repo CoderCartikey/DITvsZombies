@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=15 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -19,6 +19,9 @@ radius = 3.23663
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8yp5y"]
 size = Vector2(158.845, 114.191)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yly64"]
+size = Vector2(1662.05, 4337.65)
 
 [node name="maincampus" type="Node2D"]
 position = Vector2(-7, 3)
@@ -986,6 +989,10 @@ text = "VISHVASARAY"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(819, -4589.5)
+rotation = -3.14159
+scale = Vector2(0.537218, -0.148661)
+shape = SubResource("RectangleShape2D_yly64")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
