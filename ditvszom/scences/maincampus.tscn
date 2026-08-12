@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=21 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -12,7 +12,9 @@
 [ext_resource type="Script" path="res://scences/infirmary.gd" id="8_apf64"]
 [ext_resource type="Texture2D" uid="uid://csg4c1gxuahl3" path="res://scences/CS.jpg" id="11_eoqjm"]
 [ext_resource type="Script" path="res://scences/zoom_area.gd" id="11_x3d3q"]
+[ext_resource type="FontFile" uid="uid://ga7hdml252in" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf" id="13_3px18"]
 [ext_resource type="FontFile" uid="uid://bvv2q05c3enjq" path="res://kirifont/KiriFont.ttf" id="13_ysssi"]
+[ext_resource type="FontFile" path="res://kirifont/Kirifont.tres" id="15_85wfo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mr6ob"]
 size = Vector2(56.9812, 3.93775)
@@ -918,7 +920,6 @@ scale = Vector2(3.08, 3.08)
 text = "Girl's Hostel"
 
 [node name="Label2" type="Label" parent="alllables/Label"]
-layout_mode = 0
 offset_left = 1.29865
 offset_top = 17.8571
 offset_right = 222.299
@@ -973,12 +974,13 @@ scale = Vector2(2.1199, 2.1199)
 text = "PARKING"
 
 [node name="Label7" type="Label" parent="alllables"]
-offset_left = 905.0
-offset_top = -5113.0
-offset_right = 1126.0
-offset_bottom = -5090.0
+offset_left = 847.0
+offset_top = -5090.0
+offset_right = 1237.0
+offset_bottom = -5016.0
 rotation = -0.0726309
-scale = Vector2(3.34943, 3.34943)
+theme_override_fonts/font = ExtResource("13_3px18")
+theme_override_font_sizes/font_size = 56
 text = "CHANAKYA"
 
 [node name="Label13" type="Label" parent="alllables"]
@@ -987,8 +989,8 @@ offset_top = -5957.0
 offset_right = 523.0
 offset_bottom = -5934.0
 rotation = 0.0137758
-scale = Vector2(4.78148, 4.78148)
 theme_override_fonts/font = ExtResource("13_ysssi")
+theme_override_font_sizes/font_size = 76
 text = "Boys hostel soooon...."
 
 [node name="Label8" type="Label" parent="alllables"]
@@ -997,7 +999,8 @@ offset_top = -5050.0
 offset_right = 1605.0
 offset_bottom = -5027.0
 rotation = -0.437355
-scale = Vector2(3.34943, 3.34943)
+theme_override_fonts/font = ExtResource("15_85wfo")
+theme_override_font_sizes/font_size = 51
 text = "VISHVKARMA"
 
 [node name="Label9" type="Label" parent="alllables"]
