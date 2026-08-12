@@ -22,5 +22,11 @@ func _ready():
 
 func _on_zoom_area_body_entered(body: Node2D) -> void:
 	if body.name == "player":
-		print("ZOOM TRIGGERED")
-		camera.zoom = Vector2(2, 2)
+		var tween = create_tween()
+		tween.tween_property(camera, "zoom", Vector2(1.15, 1.15), 0.4)
+
+
+func _on_zoom_area_body_exited(body: Node2D) -> void:
+	if body.name == "player":
+		var tween = create_tween()
+		tween.tween_property(camera, "zoom", Vector2(1, 1), 0.4)
