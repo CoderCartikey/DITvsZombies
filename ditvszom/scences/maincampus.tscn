@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://scences/infirmary.gd" id="8_apf64"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3nymt"]
-radius = 11.8489
+radius = 12.0613
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tlmf3"]
 radius = 3.23663
@@ -100,19 +100,8 @@ collision_layer = 3
 collision_mask = 3
 script = ExtResource("2_mshho")
 
-[node name="Sprite2D" type="Sprite2D" parent="player"]
-z_index = 20
-scale = Vector2(0.095, 0.095)
-texture = ExtResource("2_o1sn5")
-script = ExtResource("3_3wyy0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2(2.48043, 1.29331)
-scale = Vector2(-1.4277, 0.864843)
-shape = SubResource("CircleShape2D_3nymt")
-
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(-323.439, -1465.64)
+position = Vector2(2.31592, 1.18982)
 rotation = 2.2904
 scale = Vector2(0.631453, 0.631453)
 limit_left = 0
@@ -120,6 +109,19 @@ limit_top = 0
 limit_right = 3690
 limit_bottom = 4473
 limit_smoothed = true
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+z_index = 20
+position = Vector2(0.533623, 1.30729)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("2_o1sn5")
+script = ExtResource("3_3wyy0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(1.54212, 3.03074)
+rotation = 3.14159
+scale = Vector2(1.4277, -1.14509)
+shape = SubResource("CircleShape2D_3nymt")
 
 [node name="ZOM" type="Node2D" parent="."]
 script = ExtResource("6_hu1ns")
