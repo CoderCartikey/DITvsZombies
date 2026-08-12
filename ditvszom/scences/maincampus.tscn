@@ -945,12 +945,35 @@ GROUND"
 
 [node name="Label17" type="Label" parent="alllables"]
 offset_left = 617.0
-offset_top = -1301.0
+offset_top = -1293.44
 offset_right = 1654.0
-offset_bottom = -1212.0
+offset_bottom = -1204.44
+theme_override_colors/font_color = Color(7.21961e-07, 0.449338, 4.81307e-07, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("13_ysssi")
 theme_override_font_sizes/font_size = 88
+text = "DIT vs ZOMBIES"
+
+[node name="Label18" type="Label" parent="alllables"]
+offset_left = 629.0
+offset_top = -1300.0
+offset_right = 1666.0
+offset_bottom = -1211.0
+theme_override_colors/font_color = Color(0, 0.993871, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_ysssi")
+theme_override_font_sizes/font_size = 86
+text = "DIT vs ZOMBIES"
+
+[node name="Label19" type="Label" parent="alllables"]
+offset_left = 644.0
+offset_top = -1303.0
+offset_right = 1681.0
+offset_bottom = -1214.0
+theme_override_colors/font_color = Color(0.883019, 1, 0.870498, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_ysssi")
+theme_override_font_sizes/font_size = 83
 text = "DIT vs ZOMBIES"
 
 [node name="Label4" type="Label" parent="alllables"]
