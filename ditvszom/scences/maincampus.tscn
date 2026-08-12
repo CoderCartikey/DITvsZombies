@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=19 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://scences/infirmary.gd" id="8_apf64"]
 [ext_resource type="Texture2D" uid="uid://csg4c1gxuahl3" path="res://scences/CS.jpg" id="11_eoqjm"]
 [ext_resource type="Script" path="res://scences/zoom_area.gd" id="11_x3d3q"]
+[ext_resource type="FontFile" uid="uid://bvv2q05c3enjq" path="res://kirifont/KiriFont.ttf" id="13_ysssi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mr6ob"]
 size = Vector2(56.9812, 3.93775)
@@ -895,6 +896,16 @@ position = Vector2(534, -3987)
 rotation = 0.241272
 shape = SubResource("RectangleShape2D_8yp5y")
 
+[node name="ZoomArea" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("11_x3d3q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea"]
+position = Vector2(832.78, -4585.04)
+rotation = -3.14159
+scale = Vector2(0.537218, -0.148661)
+shape = SubResource("RectangleShape2D_yly64")
+
 [node name="alllables" type="Node" parent="."]
 
 [node name="Label" type="Label" parent="alllables"]
@@ -970,6 +981,16 @@ rotation = -0.0726309
 scale = Vector2(3.34943, 3.34943)
 text = "CHANAKYA"
 
+[node name="Label13" type="Label" parent="alllables"]
+offset_left = 490.0
+offset_top = -6002.0
+offset_right = 734.0
+offset_bottom = -5979.0
+rotation = 0.0275717
+scale = Vector2(3.34943, 3.34943)
+theme_override_fonts/font = ExtResource("13_ysssi")
+text = "Boys hostel soooon...."
+
 [node name="Label8" type="Label" parent="alllables"]
 offset_left = 1384.0
 offset_top = -5050.0
@@ -997,6 +1018,22 @@ rotation = -0.46426
 scale = Vector2(1.8338, 1.8338)
 text = "Frisco"
 
+[node name="Label14" type="Label" parent="alllables"]
+offset_left = 1095.0
+offset_top = -5859.0
+offset_right = 1316.0
+offset_bottom = -5836.0
+scale = Vector2(1.8338, 1.8338)
+text = "Hostel Gate - 1"
+
+[node name="Label15" type="Label" parent="alllables"]
+offset_left = 188.0
+offset_top = -5868.0
+offset_right = 409.0
+offset_bottom = -5845.0
+scale = Vector2(1.8338, 1.8338)
+text = "Hostel Gate - 2"
+
 [node name="Label11" type="Label" parent="alllables"]
 offset_left = 1848.0
 offset_top = -4998.0
@@ -1005,16 +1042,6 @@ offset_bottom = -4975.0
 rotation = 0.191783
 scale = Vector2(2.054, 2.054)
 text = "VISHVASARAY"
-
-[node name="ZoomArea" type="Area2D" parent="."]
-collision_mask = 2
-script = ExtResource("11_x3d3q")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ZoomArea"]
-position = Vector2(832.78, -4585.04)
-rotation = -3.14159
-scale = Vector2(0.537218, -0.148661)
-shape = SubResource("RectangleShape2D_yly64")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
