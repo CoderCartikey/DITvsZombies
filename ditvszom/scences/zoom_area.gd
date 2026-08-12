@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var camera = $"../Camera2D"
+@onready var camera = $"../player/Camera2D"
 
 func _on_body_entered(body):
 	if body.name == "player":
