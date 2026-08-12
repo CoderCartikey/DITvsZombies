@@ -115,6 +115,8 @@ rotation = 3.14159
 scale = Vector2(1.4277, -0.864843)
 shape = SubResource("CircleShape2D_3nymt")
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+
 [node name="ZOM" type="Node2D" parent="."]
 script = ExtResource("6_hu1ns")
 
