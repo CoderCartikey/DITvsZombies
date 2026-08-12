@@ -9,10 +9,13 @@ var player = null
 
 func _ready():
 	add_to_group("zombies")
-	# Player dhundho
+	# Collision code se set karo — editor values override
+	set_collision_layer_value(1, false)
+	set_collision_layer_value(3, true)
+	set_collision_mask_value(1, true)
+	set_collision_mask_value(2, true)
+	
 	player = get_parent().get_parent().get_node("player")
-	if player == null:
-		print("Player not found from zombie: ", name)
 
 func _physics_process(delta):
 	if player == null:
