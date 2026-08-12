@@ -31,7 +31,7 @@ func _physics_process(delta):
 	# Smooth rotation
 	if direction != Vector2.ZERO:
 		var target_angle = direction.angle()
-		rotation = lerp_angle(rotation, target_angle, 0.1)
+		rotation = lerp_angle(rotation, target_angle, 0.2)
 
 	move_and_slide()
 
