@@ -952,7 +952,8 @@ offset_top = -4051.0
 offset_right = 1306.0
 offset_bottom = -4028.0
 rotation = -1.28402
-scale = Vector2(3.15199, 3.15199)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 56
 text = "VASTU"
 
 [node name="Label5" type="Label" parent="alllables"]
@@ -969,8 +970,9 @@ offset_left = 708.0
 offset_top = -4607.0
 offset_right = 929.0
 offset_bottom = -4584.0
-rotation = 0.17998
-scale = Vector2(2.1199, 2.1199)
+rotation = 0.223597
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 49
 text = "PARKING"
 
 [node name="Label7" type="Label" parent="alllables"]
