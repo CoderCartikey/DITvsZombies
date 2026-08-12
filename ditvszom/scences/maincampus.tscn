@@ -43,7 +43,6 @@ scale = Vector2(1.48073, 4.85093)
 texture = ExtResource("11_eoqjm")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Cs"]
-visible = false
 scale = Vector2(23.87, 23.87)
 collision_layer = 15
 collision_mask = 15
