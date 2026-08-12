@@ -117,8 +117,9 @@ rotation = 2.2904
 scale = Vector2(0.631453, 0.631453)
 limit_left = 0
 limit_top = 0
-limit_right = 4212
-limit_bottom = 5972
+limit_right = 3690
+limit_bottom = 4473
+limit_smoothed = true
 
 [node name="ZOM" type="Node2D" parent="."]
 script = ExtResource("6_hu1ns")
