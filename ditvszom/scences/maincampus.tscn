@@ -111,14 +111,6 @@ position = Vector2(2.48043, 1.29331)
 scale = Vector2(-1.4277, 0.864843)
 shape = SubResource("CircleShape2D_3nymt")
 
-[node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(-18.5364, 3.90601)
-rotation = -0.30144
-scale = Vector2(0.631453, 0.631453)
-zoom = Vector2(1.165, 1.165)
-limit_top = 3942
-limit_bottom = 522
-
 [node name="ZOM" type="Node2D" parent="."]
 script = ExtResource("6_hu1ns")
 
@@ -981,6 +973,14 @@ offset_bottom = -4975.0
 rotation = 0.191783
 scale = Vector2(2.054, 2.054)
 text = "VISHVASARAY"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1432, -1897)
+rotation = -2.59184
+scale = Vector2(1, 1)
+zoom = Vector2(1.165, 1.165)
+limit_top = 3942
+limit_bottom = 522
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]

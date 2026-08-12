@@ -21,3 +21,13 @@ func _ready():
 
 func _process(delta):
 	camera.global_position = player.global_position
+	
+func _ready():
+	var cam = $Camera2D
+	cam.limit_left = 0
+	cam.limit_top = 0
+	cam.limit_right = 2048   # apna map width daalo
+	cam.limit_bottom = 4096  # apna map height daalo
+	
+	# Smooth limit
+	cam.limit_smoothed = true
