@@ -984,11 +984,11 @@ theme_override_font_sizes/font_size = 56
 text = "CHANAKYA"
 
 [node name="Label13" type="Label" parent="alllables"]
-offset_left = 279.0
-offset_top = -5957.0
-offset_right = 523.0
-offset_bottom = -5934.0
-rotation = 0.0137758
+offset_left = 291.0
+offset_top = -5944.0
+offset_right = 1446.0
+offset_bottom = -5867.0
+rotation = 0.00563017
 theme_override_fonts/font = ExtResource("13_ysssi")
 theme_override_font_sizes/font_size = 76
 text = "Boys hostel soooon...."
