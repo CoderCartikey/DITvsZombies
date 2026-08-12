@@ -14,7 +14,7 @@
 [ext_resource type="Script" path="res://scences/zoom_area.gd" id="11_x3d3q"]
 [ext_resource type="FontFile" uid="uid://ga7hdml252in" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf" id="13_3px18"]
 [ext_resource type="FontFile" uid="uid://bvv2q05c3enjq" path="res://kirifont/KiriFont.ttf" id="13_ysssi"]
-[ext_resource type="FontFile" path="res://kirifont/Kirifont.tres" id="15_85wfo"]
+[ext_resource type="FontFile" uid="uid://cvfd47ndpbo2p" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf" id="15_g16br"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mr6ob"]
 size = Vector2(56.9812, 3.93775)
@@ -995,12 +995,12 @@ text = "Boys hostel soooon...."
 
 [node name="Label8" type="Label" parent="alllables"]
 offset_left = 1384.0
-offset_top = -5050.0
-offset_right = 1605.0
-offset_bottom = -5027.0
+offset_top = -5039.0
+offset_right = 1702.0
+offset_bottom = -4987.0
 rotation = -0.437355
-theme_override_fonts/font = ExtResource("15_85wfo")
-theme_override_font_sizes/font_size = 51
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 42
 text = "VISHVKARMA"
 
 [node name="Label9" type="Label" parent="alllables"]
