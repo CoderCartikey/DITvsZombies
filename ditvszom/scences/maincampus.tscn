@@ -106,12 +106,6 @@ scale = Vector2(0.095, 0.095)
 texture = ExtResource("2_o1sn5")
 script = ExtResource("3_3wyy0")
 
-[node name="Camera2D" type="Camera2D" parent="player/Sprite2D"]
-position = Vector2(-195.12, 41.1152)
-rotation = -0.30144
-scale = Vector2(6.64687, 6.64687)
-zoom = Vector2(1.165, 1.165)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2(2.48043, 1.29331)
 scale = Vector2(-1.4277, 0.864843)
@@ -979,6 +973,12 @@ offset_bottom = -4975.0
 rotation = 0.191783
 scale = Vector2(2.054, 2.054)
 text = "VISHVASARAY"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1432, -1897)
+rotation = -2.59184
+scale = Vector2(1, 1)
+zoom = Vector2(1.165, 1.165)
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
