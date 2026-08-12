@@ -104,7 +104,7 @@ script = ExtResource("2_mshho")
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(2.31592, 1.18982)
 rotation = 2.2904
-scale = Vector2(0.631453, 0.631453)
+scale = Vector2(0.577733, 5.18331)
 limit_left = 0
 limit_top = 0
 limit_right = 3690
