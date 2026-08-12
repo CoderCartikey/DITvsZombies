@@ -1043,6 +1043,8 @@ offset_top = -4998.0
 offset_right = 2069.0
 offset_bottom = -4975.0
 rotation = 0.191783
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 26
 text = "VISHVASARAY"
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
