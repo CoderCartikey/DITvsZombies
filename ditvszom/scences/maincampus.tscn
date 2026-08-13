@@ -255,16 +255,16 @@ position = Vector2(552, -1462)
 position = Vector2(572, -1414)
 
 [node name="zombie73" parent="ZOM" instance=ExtResource("7_ssrky")]
-position = Vector2(485, -1573)
+position = Vector2(606, -1521)
 
 [node name="zombie74" parent="ZOM" instance=ExtResource("7_ssrky")]
-position = Vector2(488, -1672)
+position = Vector2(637, -1573)
 
 [node name="zombie75" parent="ZOM" instance=ExtResource("7_ssrky")]
 position = Vector2(570, -1654)
 
 [node name="zombie76" parent="ZOM" instance=ExtResource("7_ssrky")]
-position = Vector2(494, -1614)
+position = Vector2(579, -1526)
 
 [node name="zombie77" parent="ZOM" instance=ExtResource("7_ssrky")]
 position = Vector2(610, -1553)
@@ -291,7 +291,7 @@ position = Vector2(447, -1687)
 position = Vector2(449, -1604)
 
 [node name="zombie85" parent="ZOM" instance=ExtResource("7_ssrky")]
-position = Vector2(425, -1565)
+position = Vector2(580, -1600)
 
 [node name="zombie86" parent="ZOM" instance=ExtResource("7_ssrky")]
 position = Vector2(428, -1642)
@@ -1360,9 +1360,10 @@ rotation = -1.73286
 scale = Vector2(0.0690669, 0.0682184)
 texture = ExtResource("20_wiyyp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="UkPolice/Sprite2D"]
-position = Vector2(-10.6465, -7.0957)
-scale = Vector2(1, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UkPolice"]
+position = Vector2(907.641, -1464.2)
+rotation = -1.73286
+scale = Vector2(0.0690668, 0.0682184)
 shape = SubResource("RectangleShape2D_frod5")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
