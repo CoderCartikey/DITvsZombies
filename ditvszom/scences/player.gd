@@ -15,15 +15,13 @@ func _ready():
 func _physics_process(delta):
 	if is_dead:
 		return
-	var direction = Vector2.ZERO
-	if Input.is_key_pressed(KEY_D):
-		direction.x += 1
-	if Input.is_key_pressed(KEY_A):
-		direction.x -= 1
-	if Input.is_key_pressed(KEY_S):
-		direction.y += 1
-	if Input.is_key_pressed(KEY_W):
-		direction.y -= 1
+var direction = Vector2.ZERO
+
+direction.x = Input.get_axis("move_left", "move_right")
+direction.y = Input.get_axis("move_up", "move_down")
+
+direction = direction.normalized()
+velocity = direction * SPEED
 
 	direction = direction.normalized()
 	velocity = direction * SPEED
