@@ -1352,7 +1352,7 @@ stream = ExtResource("19_pgion")
 autoplay = true
 parameters/looping = true
 
-[node name="UkPolice" type="Node" parent="."]
+[node name="UkPolice" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="UkPolice"]
 position = Vector2(908, -1465)
