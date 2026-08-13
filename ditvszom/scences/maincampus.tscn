@@ -157,6 +157,105 @@ script = ExtResource("6_hu1ns")
 
 [node name="zombie" parent="ZOM" instance=ExtResource("7_ssrky")]
 
+[node name="zombie42" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(816, -1502)
+
+[node name="zombie43" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(777, -1507)
+
+[node name="zombie44" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(763, -1441)
+
+[node name="zombie45" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(746, -1480)
+
+[node name="zombie46" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(728, -1514)
+
+[node name="zombie47" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(721, -1463)
+
+[node name="zombie48" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(725, -1418)
+
+[node name="zombie49" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(687, -1503)
+
+[node name="zombie50" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(686, -1540)
+
+[node name="zombie51" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(719, -1552)
+
+[node name="zombie52" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(692, -1460)
+
+[node name="zombie53" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(694, -1411)
+
+[node name="zombie54" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(791, -1408)
+
+[node name="zombie55" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(806, -1453)
+
+[node name="zombie56" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(825, -1412)
+
+[node name="zombie57" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(686, -1566)
+
+[node name="zombie58" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(651, -1506)
+
+[node name="zombie59" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(638, -1467)
+
+[node name="zombie60" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(656, -1559)
+
+[node name="zombie61" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(663, -1596)
+
+[node name="zombie62" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(662, -1636)
+
+[node name="zombie63" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(617, -1712)
+
+[node name="zombie64" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(540, -1721)
+
+[node name="zombie65" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(543, -1624)
+
+[node name="zombie66" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(603, -1610)
+
+[node name="zombie67" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(582, -1569)
+
+[node name="zombie68" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(540, -1564)
+
+[node name="zombie69" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(544, -1519)
+
+[node name="zombie70" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(589, -1501)
+
+[node name="zombie71" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(552, -1462)
+
+[node name="zombie72" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(572, -1414)
+
+[node name="zombie73" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(485, -1573)
+
+[node name="zombie74" parent="ZOM" instance=ExtResource("7_ssrky")]
+position = Vector2(488, -1672)
+
 [node name="zombie2" type="CharacterBody2D" parent="ZOM"]
 position = Vector2(1195, -2355)
 rotation = -2.59184
