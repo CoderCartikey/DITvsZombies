@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
+const SPEED = 3000.0
 
 var health = 100
 var health_bar = null
@@ -97,13 +97,13 @@ func show_dead_screen():
 
 	# "YOU'RE DEAD" text
 	var label = Label.new()
-	label.text = "YOU'RE DEAD"
+	label.text = "YOU'RE DEAD BRO.."
 
 	label.add_theme_font_size_override("font_size", 72)
 	label.add_theme_color_override("font_color", Color.RED)
 
 	label.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	label.position = Vector2(-300, -70)
+	label.position = Vector2(-310, -70)
 	label.size = Vector2(600, 140)
 
 	canvas.add_child(label)
