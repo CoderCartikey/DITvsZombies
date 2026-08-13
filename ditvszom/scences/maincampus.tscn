@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=28 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -38,6 +38,9 @@ size = Vector2(1988.84, 4116.21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hr1rr"]
 size = Vector2(110.446, 50.2876)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oeqqa"]
+size = Vector2(78.9326, 21.3826)
 
 [node name="maincampus" type="Node2D"]
 position = Vector2(-7, 3)
@@ -1352,10 +1355,18 @@ parameters/looping = true
 [node name="UkPolice" type="Sprite2D" parent="."]
 light_mask = 0
 visibility_layer = 8
-position = Vector2(931, -1469)
+position = Vector2(908, -1469)
 rotation = -1.5769
 scale = Vector2(0.0717143, 0.0717143)
 texture = ExtResource("20_wiyyp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="UkPolice"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UkPolice/StaticBody2D"]
+z_index = 2
+position = Vector2(7.01172, -11.4326)
+scale = Vector2(27.385, 27.385)
+shape = SubResource("RectangleShape2D_oeqqa")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
