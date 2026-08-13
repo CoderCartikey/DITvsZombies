@@ -43,6 +43,7 @@ position = Vector2(-7, 3)
 script = ExtResource("1_8jrgy")
 
 [node name="Cs" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(1066.5, -3530.5)
 scale = Vector2(1.48073, 4.85093)
 texture = ExtResource("11_eoqjm")
@@ -57,6 +58,7 @@ position = Vector2(-5.81412, -21.7503)
 shape = SubResource("RectangleShape2D_mr6ob")
 
 [node name="campusmap" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(960, -3585)
 rotation = -3.14159
 scale = Vector2(0.876, 0.749)
@@ -1198,6 +1200,8 @@ scale = Vector2(4.83, 4.83)
 shape = SubResource("RectangleShape2D_hr1rr")
 
 [node name="BGM" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1038, -1459)
+scale = Vector2(-150.541, 4.66745)
 stream = ExtResource("19_pgion")
 autoplay = true
 parameters/looping = false
