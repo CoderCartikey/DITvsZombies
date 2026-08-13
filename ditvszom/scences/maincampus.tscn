@@ -1200,7 +1200,7 @@ shape = SubResource("RectangleShape2D_hr1rr")
 [node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("19_pgion")
 autoplay = true
-parameters/looping = false
+parameters/looping = true
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
