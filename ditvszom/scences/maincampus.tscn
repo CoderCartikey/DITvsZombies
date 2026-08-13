@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=26 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cggbycgurufte" path="res://sprites/SIDEplayer.png" id="16_7tx1y"]
 [ext_resource type="Texture2D" uid="uid://dsdbgofnvxrx4" path="res://sprites/SIDEzom.png" id="17_3fq2y"]
 [ext_resource type="Texture2D" uid="uid://dlcgf6urjpj3v" path="res://sprites/car.png" id="18_kq56s"]
+[ext_resource type="AudioStream" uid="uid://bnkt35jgqhs67" path="res://sfx/Midnight_Perimeter.mp3" id="19_pgion"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mr6ob"]
 size = Vector2(56.9812, 3.93775)
@@ -1197,6 +1198,7 @@ scale = Vector2(4.83, 4.83)
 shape = SubResource("RectangleShape2D_hr1rr")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_pgion")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
