@@ -1138,8 +1138,7 @@ text = "VISHVASARAY"
 [node name="BANNER" type="Node2D" parent="."]
 
 [node name="SidEplayer" type="Sprite2D" parent="BANNER"]
-z_index = 15
-position = Vector2(665, -1273)
+position = Vector2(664, -1275)
 scale = Vector2(0.331055, 0.331055)
 texture = ExtResource("16_7tx1y")
 flip_h = true
