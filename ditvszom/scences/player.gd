@@ -15,17 +15,21 @@ func _ready():
 func _physics_process(delta):
 	if is_dead:
 		return
-var direction = Vector2.ZERO
 
-direction.x = Input.get_axis("move_left", "move_right")
-direction.y = Input.get_axis("move_up", "move_down")
+	var direction = Vector2.ZERO
 
-direction = direction.normalized()
-velocity = direction * SPEED
+	direction.x = Input.get_axis("move_left", "move_right")
+	direction.y = Input.get_axis("move_up", "move_down")
 
 	direction = direction.normalized()
 	velocity = direction * SPEED
 
+	# Smooth rotation
+	if direction != Vector2.ZERO:
+		var target_angle = direction.angle()
+		rotation = lerp_angle(rotation, target_angle, 0.1)
+
+	move_and_slide()
 	# Smooth rotation
 	if direction != Vector2.ZERO:
 		var target_angle = direction.angle()
