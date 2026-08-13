@@ -1,17 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://chrmrj163bsjn"]
+[gd_scene load_steps=3 format=3 uid="uid://chrmrj163bsjn"]
 
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_eolin"]
+[ext_resource type="Texture2D" uid="uid://cekkux670s16m" path="res://addons/shoot.png" id="2_gcpyt"]
 
 [node name="TouchControls" type="CanvasLayer"]
 
 [node name="Virtual Joystick" parent="." instance=ExtResource("1_eolin")]
-offset_left = -1.0
-offset_top = -299.0
-offset_right = 299.0
-offset_bottom = 1.0
+offset_left = 36.0
+offset_top = -320.0
+offset_right = 336.0
+offset_bottom = -20.0
 pressed_color = Color(2.45467e-06, 0.666681, 0.0850305, 1)
 joystick_mode = 1
 action_left = "move_left"
 action_right = "move_right"
 action_up = "move_up"
 action_down = "move_down"
+
+[node name="shoot" type="TouchScreenButton" parent="."]
+position = Vector2(1033, 396)
+scale = Vector2(0.11335, 0.11335)
+texture_normal = ExtResource("2_gcpyt")
+action = "ui_accept"
