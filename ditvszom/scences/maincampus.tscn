@@ -1348,11 +1348,11 @@ stream = ExtResource("19_pgion")
 autoplay = true
 parameters/looping = true
 
-[node name="Node" type="Node" parent="."]
+[node name="UkPolice" type="Node" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Node"]
+[node name="Sprite2D" type="Sprite2D" parent="UkPolice"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/Sprite2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UkPolice/Sprite2D"]
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
