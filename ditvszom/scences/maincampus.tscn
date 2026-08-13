@@ -1196,6 +1196,8 @@ position = Vector2(4.49219, -1.07031)
 scale = Vector2(4.83, 4.83)
 shape = SubResource("RectangleShape2D_hr1rr")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
 [connection signal="body_entered" from="ZoomArea" to="." method="_on_zoom_area_body_entered"]
