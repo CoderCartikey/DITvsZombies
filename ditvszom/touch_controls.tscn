@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://chrmrj163bsjn"]
+[gd_scene load_steps=2 format=3 uid="uid://chrmrj163bsjn"]
+
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_eolin"]
 
 [node name="TouchControls" type="CanvasLayer"]
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("1_eolin")]
+offset_top = -720.0
+offset_bottom = -420.0
+scale = Vector2(2, 2)
