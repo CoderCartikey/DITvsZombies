@@ -53,7 +53,6 @@ collision_mask = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cs/StaticBody2D"]
 position = Vector2(-5.81412, -21.7503)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_mr6ob")
 
 [node name="campusmap" type="Sprite2D" parent="."]
@@ -940,6 +939,7 @@ theme_override_font_sizes/font_size = 41
 text = "Girl's Hostel"
 
 [node name="Label2" type="Label" parent="alllables/Label"]
+layout_mode = 0
 offset_left = 1.45031
 offset_top = 51.0677
 offset_right = 238.45
@@ -1195,6 +1195,8 @@ z_index = 20
 position = Vector2(4.49219, -1.07031)
 scale = Vector2(4.83, 4.83)
 shape = SubResource("RectangleShape2D_hr1rr")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
