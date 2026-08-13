@@ -1449,7 +1449,7 @@ rotation = -1.73286
 scale = Vector2(0.0690668, 0.0682184)
 shape = SubResource("RectangleShape2D_frod5")
 
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+[node name="MobileControls" type="CanvasLayer" parent="."]
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
