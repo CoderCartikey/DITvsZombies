@@ -6,10 +6,10 @@
 [node name="TouchControls" type="CanvasLayer"]
 
 [node name="Virtual Joystick" parent="." instance=ExtResource("1_eolin")]
-offset_left = 36.0
-offset_top = -320.0
-offset_right = 336.0
-offset_bottom = -20.0
+offset_left = 66.0
+offset_top = -347.0
+offset_right = 366.0
+offset_bottom = -47.0
 pressed_color = Color(2.45467e-06, 0.666681, 0.0850305, 1)
 joystick_mode = 1
 action_left = "move_left"
@@ -18,7 +18,7 @@ action_up = "move_up"
 action_down = "move_down"
 
 [node name="shoot" type="TouchScreenButton" parent="."]
-position = Vector2(1033, 396)
+position = Vector2(1075, 358)
 scale = Vector2(0.11335, 0.11335)
 texture_normal = ExtResource("2_gcpyt")
 action = "ui_accept"
