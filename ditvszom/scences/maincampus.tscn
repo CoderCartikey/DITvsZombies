@@ -1341,14 +1341,24 @@ theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 36
 text = "VIVEKANANDA"
 
-[node name="Label10" type="Label" parent="alllables"]
-offset_left = 1759.0
-offset_top = -5468.0
-offset_right = 1980.0
-offset_bottom = -5445.0
-rotation = -0.46426
-scale = Vector2(1.8338, 1.8338)
+[node name="Label23" type="Label" parent="alllables"]
+offset_left = 654.0
+offset_top = -6002.0
+offset_right = 992.0
+offset_bottom = -5958.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 36
+text = "Mega BOSS Fight"
+
+[node name="Label10" type="Label" parent="alllables"]
+offset_left = 1738.0
+offset_top = -5471.0
+offset_right = 1959.0
+offset_bottom = -5387.0
+rotation = -0.46426
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
 text = "Frisco"
 
 [node name="Label14" type="Label" parent="alllables"]
