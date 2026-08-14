@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://blee2wg610o48"]
+[gd_scene load_steps=32 format=3 uid="uid://blee2wg610o48"]
 
 [ext_resource type="Script" path="res://scences/maincampus.gd" id="1_8jrgy"]
 [ext_resource type="Script" path="res://scences/player.gd" id="2_mshho"]
@@ -18,6 +18,7 @@
 [ext_resource type="FontFile" uid="uid://cvfd47ndpbo2p" path="res://xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf" id="15_g16br"]
 [ext_resource type="Texture2D" uid="uid://cggbycgurufte" path="res://sprites/SIDEplayer.png" id="16_7tx1y"]
 [ext_resource type="Texture2D" uid="uid://dsdbgofnvxrx4" path="res://sprites/SIDEzom.png" id="17_3fq2y"]
+[ext_resource type="Texture2D" uid="uid://b3oi4hqb7x5t3" path="res://sprites/insta.png" id="17_f6ued"]
 [ext_resource type="Texture2D" uid="uid://dlcgf6urjpj3v" path="res://sprites/car.png" id="18_kq56s"]
 [ext_resource type="AudioStream" uid="uid://bnkt35jgqhs67" path="res://sfx/Midnight_Perimeter.mp3" id="19_pgion"]
 [ext_resource type="Texture2D" uid="uid://bbv0a4cl5i1kq" path="res://sprites/ukPOLICE.png" id="20_wiyyp"]
@@ -1370,6 +1371,11 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 26
 text = "VISHVASARAY"
+
+[node name="Insta" type="Sprite2D" parent="alllables"]
+position = Vector2(786, -1171)
+scale = Vector2(0.0215765, 0.0215765)
+texture = ExtResource("17_f6ued")
 
 [node name="BANNER" type="Node2D" parent="."]
 
