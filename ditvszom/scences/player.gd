@@ -107,7 +107,7 @@ func show_dead_screen():
 	label.size = Vector2(600, 140)
 
 	canvas.add_child(label)
-
+	
 	# Restart button
 	var button = Button.new()
 	button.text = "Try Again"
@@ -116,12 +116,18 @@ func show_dead_screen():
 	button.position = Vector2(-100, 50)
 	button.size = Vector2(200, 60)
 
-	# Accept mouse + touch input
 	button.mouse_filter = Control.MOUSE_FILTER_STOP
-	button.focus_mode = Control.FOCUS_ALL
 
+	# Normal PC click
 	button.pressed.connect(func():
 		get_tree().reload_current_scene()
+	)
+
+	# Explicit Android touch
+	button.gui_input.connect(func(event):
+		if event is InputEventScreenTouch:
+			if event.pressed == false:
+				get_tree().reload_current_scene()
 	)
 
 	canvas.add_child(button)
