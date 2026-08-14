@@ -1212,14 +1212,14 @@ theme_override_font_sizes/font_size = 88
 text = "DIT vs ZOMBIES"
 
 [node name="Label21" type="Label" parent="alllables"]
-offset_left = 724.0
+offset_left = 720.0
 offset_top = -1178.0
-offset_right = 1761.0
+offset_right = 1757.0
 offset_bottom = -1089.0
 theme_override_colors/font_shadow_color = Color(0, 0.832498, 0.832498, 1)
 theme_override_fonts/font = ExtResource("13_ysssi")
 theme_override_font_sizes/font_size = 18
-text = "dev:    kkartyy"
+text = "DEV:    kkartkyy"
 
 [node name="Label18" type="Label" parent="alllables"]
 offset_left = 629.0
@@ -1382,11 +1382,6 @@ theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 26
 text = "VISHVASARAY"
 
-[node name="Insta" type="Sprite2D" parent="alllables"]
-position = Vector2(786, -1171)
-scale = Vector2(0.0215765, 0.0215765)
-texture = ExtResource("17_f6ued")
-
 [node name="BANNER" type="Node2D" parent="."]
 
 [node name="SidEplayer" type="Sprite2D" parent="BANNER"]
@@ -1494,6 +1489,11 @@ offset_right = 189.0
 offset_bottom = 616.0
 
 [node name="TouchControls" parent="Control" instance=ExtResource("21_58khn")]
+
+[node name="Insta" type="Sprite2D" parent="."]
+position = Vector2(796, -1174)
+scale = Vector2(0.0215765, 0.0215765)
+texture = ExtResource("17_f6ued")
 
 [connection signal="body_entered" from="Infirmary" to="." method="_on_infirmary_body_entered"]
 [connection signal="body_entered" from="Infirmary" to="Infirmary" method="_on_body_entered"]
