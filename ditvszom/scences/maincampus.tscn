@@ -1219,7 +1219,7 @@ offset_bottom = -1089.0
 theme_override_colors/font_shadow_color = Color(0, 0.832498, 0.832498, 1)
 theme_override_fonts/font = ExtResource("13_ysssi")
 theme_override_font_sizes/font_size = 18
-text = "dev:   kkartyy"
+text = "dev:    kkartyy"
 
 [node name="Label18" type="Label" parent="alllables"]
 offset_left = 629.0
@@ -1255,15 +1255,25 @@ theme_override_font_sizes/font_size = 56
 text = "VASTU"
 
 [node name="Label16" type="Label" parent="alllables"]
-offset_left = 891.0
-offset_top = -3536.0
-offset_right = 1191.0
-offset_bottom = -3467.0
+offset_left = 914.0
+offset_top = -3608.0
+offset_right = 1214.0
+offset_bottom = -3539.0
 rotation = -1.17543
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("15_g16br")
 theme_override_font_sizes/font_size = 56
 text = "VEDANTA"
+
+[node name="Label22" type="Label" parent="alllables"]
+offset_left = 446.0
+offset_top = -3101.0
+offset_right = 746.0
+offset_bottom = -3032.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_g16br")
+theme_override_font_sizes/font_size = 56
+text = "<<<IMS"
 
 [node name="Label5" type="Label" parent="alllables"]
 offset_left = 857.0
