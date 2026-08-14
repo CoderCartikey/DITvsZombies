@@ -1211,13 +1211,13 @@ theme_override_font_sizes/font_size = 88
 text = "DIT vs ZOMBIES"
 
 [node name="Label21" type="Label" parent="alllables"]
-offset_left = 701.0
-offset_top = -1200.0
-offset_right = 1738.0
-offset_bottom = -1111.0
+offset_left = 724.0
+offset_top = -1178.0
+offset_right = 1761.0
+offset_bottom = -1089.0
 theme_override_colors/font_shadow_color = Color(0, 0.832498, 0.832498, 1)
 theme_override_fonts/font = ExtResource("13_ysssi")
-theme_override_font_sizes/font_size = 33
+theme_override_font_sizes/font_size = 18
 text = "dev:   kkartyy"
 
 [node name="Label18" type="Label" parent="alllables"]
