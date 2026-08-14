@@ -109,15 +109,19 @@ func show_dead_screen():
 	canvas.add_child(label)
 
 	# Restart button
-	var button = Button.new()
-	button.text = "Try Again"
+var button = Button.new()
+button.text = "Try Again"
 
-	button.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	button.position = Vector2(-100, 50)
-	button.size = Vector2(200, 60)
+button.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
+button.position = Vector2(-100, 50)
+button.size = Vector2(200, 60)
 
-	button.pressed.connect(func():
-		get_tree().reload_current_scene()
-	)
+# Accept mouse + touch input
+button.mouse_filter = Control.MOUSE_FILTER_STOP
+button.focus_mode = Control.FOCUS_ALL
 
-	canvas.add_child(button)
+button.pressed.connect(func():
+	get_tree().reload_current_scene()
+)
+
+canvas.add_child(button)
